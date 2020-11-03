@@ -1,30 +1,6 @@
-# mediasoup-demo v3
-
-A demo application of [mediasoup](https://mediasoup.org) **v3**.
-
-Try it online at https://v3demo.mediasoup.org.
-
-
-## Resources
-
-* mediasoup website and documentation: [mediasoup.org](https://mediasoup.org)
-* mediasoup support forum: [mediasoup.discourse.group](https://mediasoup.discourse.group)
-
-
+ 
 ## Installation
-
-* Clone the project:
-
-```bash
-$ git clone https://github.com/versatica/mediasoup-demo.git
-$ cd mediasoup-demo
-$ git checkout v3
-```
-
-* Ensure you have installed the [dependencies](https://mediasoup.org/documentation/v3/mediasoup/installation/#requirements) required by mediasoup to build.
-
-* Set up the mediasoup-demo server:
-
+ 
 ```bash
 $ cd server
 $ npm install
@@ -107,20 +83,7 @@ $ npm run connect
 $ cd server
 $ docker/build.sh
 $ MEDIASOUP_ANNOUNCED_IP=192.168.1.34 ./docker/run.sh
-```
-
-### Considerations for (config.js)[server/config.example.js]
-
-* Make sure [https.listenIp](server/config.example.js#L20) is set to `0.0.0.0`.
-* Make sure [TLS certificates](server/config.example.js#L24) reside in `server/certs` directory with names `fullchain.pem` and `privkey.pem`.
-* The default mediasoup port range is just 2000-2020, which is not suitable for production. You should increase it, however you should then run the container in `network="host"` mode.
-
-## Authors
-
-* Iñaki Baz Castillo [[website](https://inakibaz.me)|[github](https://github.com/ibc/)]
-* José Luis Millán Villegas [[github](https://github.com/jmillan/)]
-
-
+``` 
 ## License
 
 MIT
